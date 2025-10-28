@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Tree Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>Family Tree Generator</h1>
+  </nav>
+
+  <!-- Dashboard Container -->
+  <div class="dashboard">
+
+    <!-- Left Panel -->
+    <div class="controls-card card">
+      <h2>➕ Add Family Member</h2>
+      <div class="form-group">
+        <input type="text" id="parent" placeholder="Parent Name">
+        <input type="text" id="child" placeholder="Child Name">
+        <button onclick="addMember()">Add Member</button>
+      </div>
+
+      <h2>🧬 Find Ancestors</h2>
+      <div class="form-group">
+        <input type="text" id="search" placeholder="Enter Name">
+        <button onclick="showAncestors()">Search</button>
+      </div>
+
+      <div id="ancestors" class="output-box"></div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="tree-card card">
+      <h2>👨‍👩‍👧‍👦 Family Tree</h2>
+      <div id="tree" class="tree-box"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <strong>Mini Project (DSA + Tree + DFS)</strong> 
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
